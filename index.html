@@ -8,33 +8,35 @@
         </head>
         <body>
             <div>
-                <img src="VGY-image.jpg" alt="VGYs logga" width="350">
+                <img src="VGY-image.jpg" alt="VGYs logga" width="27%" height="auto">
             </div>
-            <div>
-                <label for="balance" id="balanceLabel">Skriv ditt saldo p&aring; matkortet:</label>
-                <input class="number" id="balance" type="text" onchange="ChangeField()">
-            </div>
-            <div>
-                <label for="dayCost">Kronor per dag:</label>
-                <input class="number" type="text" id="dayCost" onchange="ChangeField()">
-            </div>
-            <div>
-                <label for="tuesdays" >Exkludera tisdagar?</label>
-                <input class="check" id="tuesdayCheck" type="checkbox" onchange="ChangeFieldTuesday()">
-            </div>
-            <div>
-                <label for="fridays">Exkludera fredagar?</label>
-                <input class="check" id="fridayCheck" type="checkbox" onchange="ChangeFieldFriday()">
-            </div>
-            <div>
-                <p></p>
-                <span id="daysUntilGraduation"></span>
-                <span class="textBox" id="text"></span>
-            </div>
-            <div>
-                <span id="daysEat85">Antal dagar du kan &auml;ta f&ouml;r <span id="cost"></span> <span>kr :</span></span>
-                
-                <span class="textBox" id="text1"></span>
-            </div>
+            <table >
+                <tbody>
+                    <tr>
+                        <td class="c1">Skriv ditt saldo p&aring; matkortet:</td>
+                        <td class="c2"><input class="number" id="balance" type="text" onchange="ChangeField()"></td>
+                    </tr>
+                    <tr>
+                        <td class="c1">Kronor per dag:</td>
+                        <td class="c2"><input class="number" type="text" id="dayCost" onchange="ChangeField()"></td>
+                    </tr>
+                    <tr>
+                        <td class="c1">Exkludera tisdagar?</td>
+                        <td class="c2"><input class="check" id="tuesdayCheck" type="checkbox" onchange="ChangeFieldTuesday()"></td>
+                    </tr>
+                    <tr>
+                        <td class="c1">Exkludera fredagar?</td>
+                        <td class="c2"><input class="check" id="fridayCheck" type="checkbox" onchange="ChangeFieldFriday()"></td>
+                    </tr>
+                    <tr>
+                        <td class="c1"><span id="daysUntilGraduation"></span></td>
+                        <td class="c2"><span class="textBox" id="text"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="c1" width="210px"><span id="daysEat85">Antal dagar du kan &auml;ta f&ouml;r <span id="cost"></span> <span>kr:</span></span></td>
+                        <td class="c2"><span class="textBox" id="text1"></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </body>
     </html>
