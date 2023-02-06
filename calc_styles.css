@@ -1,6 +1,9 @@
 .c2, .c1 {
     font-family: sans-serif;
 }
-.c2 {
-    padding-left: 8px;
+.c1 {
+    margin-right: 8px;
+}
+.check {
+    margin-left: -2px;
 }
