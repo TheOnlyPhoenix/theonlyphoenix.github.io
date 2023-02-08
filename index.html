@@ -8,35 +8,37 @@
         </head>
         <body>
             <div>
-                <img src="VGY-image.jpg" alt="VGYs logga" margin-left="4px" width="392px" height="auto">
+                <img src="VGY-image.jpg" alt="VGYs logga" width="392px" height="auto">
             </div>
-            <table>
-                <tbody>
-                    <tr>
-                        <td class="c1">Skriv ditt saldo p&aring; matkortet:</td>
-                        <td class="c2"><input class="number" id="balance" type="text" onchange="ChangeField()"></td>
-                    </tr>
-                    <tr>
-                        <td class="c1">Kronor per dag:</td>
-                        <td class="c2"><input class="number" type="text" id="dayCost" onchange="ChangeField()"></td>
-                    </tr>
-                    <tr>
-                        <td class="c1">Exkludera tisdagar?</td>
-                        <td class="c2"><input class="check" id="tuesdayCheck" type="checkbox" onchange="ChangeFieldTuesday()"></td>
-                    </tr>
-                    <tr>
-                        <td class="c1">Exkludera fredagar?</td>
-                        <td class="c2"><input class="check" id="fridayCheck" type="checkbox" onchange="ChangeFieldFriday()"></td>
-                    </tr>
-                    <tr>
-                        <td class="c1"><span id="daysUntilGraduation"></span></td>
-                        <td class="c2"><span class="textBox" id="text"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="c1" width="220px"><span id="daysEat85">Antal dagar du kan &auml;ta f&ouml;r <span id="cost"></span> <span>kr:</span></span></td>
-                        <td class="c2"><span class="textBox" id="text1"></span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="c1">Skriv ditt saldo p&aring; matkortet:</td>
+                            <td class="c2"><input class="number" id="balance" type="text" onchange="ChangeField()"></td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Kronor per dag:</td>
+                            <td class="c2"><input class="number" type="text" id="dayCost" onchange="ChangeField()"></td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Exkludera tisdagar?</td>
+                            <td class="c2"><input class="check" id="tuesdayCheck" type="checkbox" onchange="ChangeFieldTuesday()"></td>
+                        </tr>
+                        <tr>
+                            <td class="c1">Exkludera fredagar?</td>
+                            <td class="c2"><input class="check" id="fridayCheck" type="checkbox" onchange="ChangeFieldFriday()"></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><span id="daysUntilGraduation"></span></td>
+                            <td class="c2"><span class="textBox" id="text"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="c1"><span id="daysEat85">Antal dagar du kan &auml;ta f&ouml;r <span id="cost"></span> <span>kr:</span></span></td>
+                            <td class="c2"><span class="textBox" id="text1"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </body>
     </html>

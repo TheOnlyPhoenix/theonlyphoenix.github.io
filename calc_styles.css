@@ -1,9 +1,12 @@
 .c2, .c1 {
     font-family: sans-serif;
+    font-size: 14px;
 }
+
 .c1 {
-    margin-right: 8px;
+    width:70%;
 }
-.c2 {
-    size: 22;
+
+table {
+    width:392px;
 }
