@@ -18,7 +18,7 @@ if (curDate < 1677279600 * 1000){ // sportlov
     removeDays += 3;
 }
 if (curDate < langFredag){ //påsklov
-    removeDays += 3;
+    removeDays += 4;
 }
 if (curDate < 1682892000 * 1000 && curDate > langFredag){ //1:a maj
     removeDays += 1;
