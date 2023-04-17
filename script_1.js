@@ -2,7 +2,7 @@ let graduation_timestamp = 1686607200;
 let grad_date = graduation_timestamp * 1000;
 let langFredag = 1680818400 * 1000;
 let curDate = Date.now();
-let endDate;
+let endDate = new Date(grad_date);
 if (curDate < langFredag){
     endDate = new Date(langFredag); 
 }
@@ -36,6 +36,7 @@ else if (curDate > langFredag){
 }
 
 let days = ((endDate - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]) - removeDays;
+
 
 document.getElementById('text').textContent = days;
 
@@ -89,10 +90,10 @@ function ChangeFieldTuesday() {
     }
     else if (document.getElementById('tuesdayCheck').checked == false){
         if (document.getElementById('fridayCheck').checked == true){
-            days = ((langFredag - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]) - numberOfDays[5];
+            days = ((grad_date - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]) - numberOfDays[5];
         }
         else {
-            days = ((langFredag - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]);
+            days = ((grad_date - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]);
         }
     }
 
@@ -109,10 +110,10 @@ function ChangeFieldFriday() {
     }
     else if (document.getElementById('fridayCheck').checked == false){
         if (document.getElementById('tuesdayCheck').checked == true){
-            days = ((langFredag - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]) - numberOfDays[2];
+            days = ((grad_date - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]) - numberOfDays[2];
         }
         else {
-            days = ((langFredag - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]);
+            days = ((grad_date - curDate) / 86400000).toFixed(0) - (numberOfDays[0] + numberOfDays[6]);
         }
     }
     
